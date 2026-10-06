@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "NeuroDrive: Main Application (Landing Screen)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "NeuroDrive: Training Mode",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--mode", "train"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "NeuroDrive: Inference Mode (Run Best Agent)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--mode", "inference"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "NeuroDrive: Neural Network Visualizer",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/main.py",
+      "args": ["--mode", "visualize"],
+      "console": "integratedTerminal"
+    }
+  ]
+}
